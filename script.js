@@ -125,3 +125,6 @@ form.addEventListener('submit', e => {
 //some sample books
 addBookToLibrary('1984', 'George Orwell', 328, 'true');
 addBookToLibrary('The Hobbit', 'J.R.R. Tolkien', 310, 'false');
+addBookToLibrary('The Hobbit', 'J.R.R. Tolkien', 310, 'false');
+addBookToLibrary('The Hobbit', 'J.R.R. Tolkien', 310, 'false');
+addBookToLibrary('The Hobbit', 'J.R.R. Tolkien', 310, 'false');
