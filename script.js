@@ -31,6 +31,16 @@ function addBookToLibrary(title, author, pages, read) {
   displayBook();
 }
 
+// Delete all books from myLibrary
+function clearBooks() {
+  myLibrary.length = 0;
+  displayBook();
+}
+
+document.getElementById('clear-lib-btn').addEventListener('click', () => {
+  clearBooks();
+});
+
 function displayBook() {
   const container = document.getElementById('book-container');
   container.innerHTML = '';
@@ -67,7 +77,7 @@ function addcardListeners() {
       const bookId = e.target.parentElement.getAttribute('data-id');
       toggleReadStatus(bookId);
     })
-  })
+  });
 }
 
 function removeBook(id) {
@@ -97,6 +107,8 @@ document.getElementById('new-book-btn').addEventListener('click', () => {
 document.getElementById('cancel-btn').addEventListener('click', () => {
   dialog.close();
 });
+
+
 
 form.addEventListener('submit', e => {
   e.preventDefault();

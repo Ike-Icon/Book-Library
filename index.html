@@ -1,34 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Library</title>
-    <link rel="stlesheet" href="style.css">
-    
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
-    <button id="new-book-btn">New Book</button>
+    <section class="sidebar">
+        <h2><i class="fa-solid fa-tachograph-digital"></i>Book Library</h2>
+        <ul>
 
-    <!-- Book Form (Hidden by default) -->
-     <dialog id="book-form-dialog">
-    <form id="book-form">
-      <label>Title: <input type="text" name="title" required></label><br>
-      <label>Author: <input type="text" name="author" required></label><br>
-      <label>Pages: <input type="number" name="pages" required></label><br>
-      <label>Read:
-        <select name="read">
-          <option value="true">Yes</option>
-          <option value="false">No</option>
-        </select>
-      </label><br>
-      <button type="submit">Add Book</button>
-      <button type="button" id="cancel-btn">Cancel</button>
-    </form>
-  </dialog>
+            <li><i class="fa-solid fa-house"></i><a href="/admin/users">Home</a></li>
+            <li><i class="fa-solid fa-id-card"></i><a href="/admin/settings">Profile</a></li>
+            <li><i class="fa-solid fa-message"></i><a href="/admin/reports">Messages</a></li>
+            <li><i class="fa-solid fa-clock-rotate-left"></i><a href="/admin/history">History</a></li>
+            <li><i class="fa-solid fa-list-check"></i><a href="/admin/tasks">Tasks</a></li>
+            <li><i class="fa-solid fa-users-line"></i><a href="/admin/community">Communities</a></li>
+            <br>
+            <br>
+            <li><i class="fa-solid fa-gear"></i><a href="/admin/logout">Settings</a></li>
+            <li><i class="fa-solid fa-circle-question"></i><a href="/admin/logout">Support</a></li>
+            <li><i class="fa-solid fa-shield-alt"></i><a href="/admin/logout">Privacy</a></li>
+        </ul>
 
-  <div id="book-container"></div>
+    </section>
+
+    <section class="content">
+        <section class="header">
+            <div class="user-input">
+                <div class="search-bar">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input type="text">
+
+                </div>
+                <div class="user-info">
+                    <i class="fa-regular fa-bell"></i>
+                    <img src="./assets/11475217.jpg" alt="User Avatar">
+                    <span>User</span>
+
+                </div>
+            </div>
+            <div class="welcome-message">
+                <div class="welcome-content">
+                    <img src="./assets/11475217.jpg" alt="User Avatar">
+                    <div class="greeting">
+                        <p>Hi there!</p>
+                        <h1>User</h1>
+
+                    </div>
+
+
+                </div>
+                <div class="welcome-actions">
+                    <button id="new-book-btn">New Book</button>
+                    <button id="clear-lib-btn">Clear Library</button>
+                    
+                </div>
+            </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="main-content">
+            <section class="projects">
+            
+
+            <!-- Book Form (Hidden by default) -->
+            <dialog id="book-form-dialog">
+                <form id="book-form">
+                    <label>Title: <input type="text" name="title" required></label><br>
+                    <label>Author: <input type="text" name="author" required></label><br>
+                    <label>Pages: <input type="number" name="pages" required></label><br>
+                    <label>Read:
+                        <select name="read">
+                            <option value="true">Yes</option>
+                            <option value="false">No</option>
+                        </select>
+                    </label><br>
+                    <button type="submit">Add Book</button>
+                    <button type="button" id="cancel-btn">Cancel</button>
+                </form>
+            </dialog>
+
+            <div id="book-container"></div>
+            </section>
+
+        </section>
+    </section>
 
     <script src="script.js"></script>
 </body>
+
 </html>
