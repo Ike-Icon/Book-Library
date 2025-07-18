@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stlesheet" href="style.css">
+    
+</head>
+<body>
+    <button id="new-book-btn">New Book</button>
+
+    <!-- Book Form (Hidden by default) -->
+     <dialog id="book-form-dialog">
+    <form id="book-form">
+      <label>Title: <input type="text" name="title" required></label><br>
+      <label>Author: <input type="text" name="author" required></label><br>
+      <label>Pages: <input type="number" name="pages" required></label><br>
+      <label>Read:
+        <select name="read">
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+      </label><br>
+      <button type="submit">Add Book</button>
+      <button type="button" id="cancel-btn">Cancel</button>
+    </form>
+  </dialog>
+
+  <div id="book-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
