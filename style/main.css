@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #d6d4e260;
+  background-color: #dfdfe356;
   /* background-image: url("https://images.unsplash.com/photo-1584531979583-18c5c4b25efc?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
   margin: 0 auto;
   padding: 0;
@@ -13,8 +13,8 @@ body {
 
 .sidebar {
   display: flex;
-  background-color: #eee3f062;
-  color: #594889;
+  background-color: #f3f2f367;
+  color: #3a6788;
   padding: 10px;
   width: 200px;
   flex-direction: column;
@@ -145,9 +145,9 @@ body {
   border-radius: 50%;
 }
 .content .header .welcome-message button:hover {
-  background-color: #50417cbb;
-  color: #000;
+  color: #c5c2c2;
   transition: 0.3s ease-in-out;
+  box-shadow: 0 7px 12px rgba(114, 182, 245, 0.699), 0 2px 4px rgba(124, 106, 174, 0.2);
 }
 .content .header .welcome-actions {
   display: flex;
@@ -156,11 +156,11 @@ body {
   gap: 10px;
 }
 .content .header .welcome-message button {
-  background-color: #594889;
+  background: linear-gradient(90deg, #5ea8ed 0%, #816fb4 80%);
   color: #fff;
   border: none;
-  padding: 5px 20px;
-  border-radius: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -211,22 +211,22 @@ body {
 }
 
 .book-card .toggle-read-btn{
-  background-color: #594889;
+  background: linear-gradient(90deg, #5ea8ed 0%, #7c6aae 100%)
 }
 
 .book-card .toggle-read-btn:hover{
-  background-color: #7c6aae;
+  box-shadow: 0 3px 12px rgba(114, 182, 245, 0.699), 0 2px 4px rgba(124, 106, 174, 0.2);
   transition: 0.3s ease-in-out;
 }
 
 .book-card .remove-btn{
-  background-color: #ec6161;
+  background: linear-gradient(90deg, #c16fa7 0%, #e93030 100%);
 }
 
 .book-card .remove-btn:hover{
   background-color: #f19e9e;
   transition: 0.3s ease-in-out;
-  
+  box-shadow: 0 3px 12px rgba(245, 114, 114, 0.699), 0 2px 4px rgba(124, 106, 174, 0.2);
 }
 
 #book-form-dialog {
