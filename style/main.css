@@ -3,7 +3,7 @@ body {
   font-optical-sizing: auto;
    font-variation-settings:
     "wdth" 100;
-  background-color: #dfdfe356;
+  /* background-color: #dfdfe356; */
   /* background-image: url("https://images.unsplash.com/photo-1584531979583-18c5c4b25efc?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
   margin: 0 auto;
   padding: 0;
@@ -16,13 +16,13 @@ body {
 
 .sidebar {
   display: flex;
-  background-color: #f3f2f367;
+  /* background-color: #f3f2f367; */
   color: #3a6788;
   padding: 10px;
   width: 200px;
   flex-direction: column;
   padding-left: 30px;
-  box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .sidebar ul {
@@ -66,7 +66,7 @@ body {
 
 .content .header {
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
   display: flex;
   flex-direction: column;
   color: #000;
@@ -181,6 +181,18 @@ body {
   /* gap: 20px; */
 }
 
+.new-book-text{
+  width: 100%;
+  display: flex;
+  /* box-shadow: 0 6px 5px rgba(0, 0, 0, 0.14); */
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.new-book-text img{
+  width: 20%;
+  /* height: 10%; */
+}
 
 #book-container {
   display: flex;
@@ -190,12 +202,12 @@ body {
 }
 
 .book-card {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   padding: 1rem;
   border-radius: 5px;
   width: 200px;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.414);
+  background-color: #ededef;
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.14);
 }
 
 .book-card:hover{
